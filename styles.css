@@ -103,3 +103,16 @@ button:hover {
 button img {
     width: 26px;
 }
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}

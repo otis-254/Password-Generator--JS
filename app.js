@@ -1,5 +1,3 @@
-
-
 const passWord = document.getElementById("Password");
 const length = 12;
 
@@ -24,7 +22,15 @@ function createPassword() {
 }
 
 function copyPassword() {
+    if (!passWord.value) {
+        alert("Please click the 'Generate Password' button to continue!");
+        return;
+    }
+
     passWord.select();
     document.execCommand("copy");
     alert("Good day! Your Password has just been copied!");
 }
+
+
+
